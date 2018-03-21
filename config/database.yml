@@ -9,18 +9,18 @@ default: &default
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000
 
-#development:
-#  <<: *default
-#  database: db/development.sqlite3
-
 development:
-  adapter: mysql2
-  encoding: utf8
-  database: railssandbox
-  pool: 5
-  username: root
-  password: password
-  host: db
+  <<: *default
+  database: db/development.sqlite3
+
+#development:
+#  adapter: mysql2
+#  encoding: utf8
+#  database: railssandbox
+#  pool: 5
+#  username: root
+#  password: password
+#  host: db
   #socket: /tmp/mysql.sock
 
 # Warning: The database defined as "test" will be erased and

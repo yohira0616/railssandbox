@@ -36,7 +36,7 @@ echo 'install node.js'
 
 git clone git://github.com/creationix/nvm.git /home/ec2-user/.nvm
 echo 'source /home/ec2-user/.nvm/nvm.sh' >> /etc/profile
-nvm install v8.9.0
+nvm install v8.10.0
 
 echo 'install node.js done'
 
