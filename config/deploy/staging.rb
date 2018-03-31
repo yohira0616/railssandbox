@@ -60,12 +60,12 @@
 #     # password: "please use keys"
 #   }
 
-server "52.15.155.218",
+server "54.199.207.143",
   user: "ec2-user",
   roles: %w{web app},
   ssh_options: {
     user: "ec2-user", # overrides user setting above
-    keys: %w(~/.ssh/sandbox.pem),
+    keys: %w(~/.ssh/my-aws-sandbox.pem),
     forward_agent: false,
     auth_methods: %w(publickey password)
     # password: "please use keys"
